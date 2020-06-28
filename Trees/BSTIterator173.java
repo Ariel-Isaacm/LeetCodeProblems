@@ -12,7 +12,7 @@ public class BSTIterator173 {
             helper(values, root);
         }
 
-        public static void helper(LinkedList<Integer> values, TreeNode root){
+        public void helper(LinkedList<Integer> values, TreeNode root){
             if(root != null){
                 helper(values, root.left);
                 values.add(root.val);
