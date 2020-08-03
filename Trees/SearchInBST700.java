@@ -2,7 +2,7 @@ package Trees;
 
 import Misc.TreeNode;
 
-public class SearchInBST {
+public class SearchInBST700 {
     class Solution {
         public TreeNode searchBST(TreeNode root, int val) {
             return helper(root, val);
