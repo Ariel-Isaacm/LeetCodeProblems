@@ -4,7 +4,7 @@ import Misc.TreeNode;
 
 public class ClosestToTarget {
     public int closestToTarget(TreeNode root, double target) {
-        return helper(root, target, Integer.MAX_VALUE);
+        return helper(root, target, root.val);
     }
 
     private int helper(TreeNode node, double target, int closest) {
