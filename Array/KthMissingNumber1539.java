@@ -17,4 +17,22 @@ public class KthMissingNumber1539 {
             return -1;
         }
     }
+    //This solution involves a time complexity of O(n+k) and space complexity of O(1)
+    //class Solution {
+    //    public int findKthPositive(int[] arr, int k) {
+    //        int i = 0;
+    //        int order = 1;
+    //        while(i < arr.length){
+    //            if(order == arr[i]){
+    //                i++;
+    //            } else {
+    //                k--;
+    //                if(k==0) return order;
+    //
+    //            }
+    //            order++;
+    //        }
+    //        return order+k-1;
+    //    }
+    //}
 }
