@@ -6,14 +6,14 @@ public class SumRootToLeaf129 {
     class Solution {
         public int sumNumbers(TreeNode root) {
             if (root == null) return 0;
-            return helper(root, "");
+            return helper(root, 0);
         }
 
-        //todo instead of a string we could use an integer and multiply it by 10 by each call
-        public int helper(TreeNode node, String s) {
+        public int helper(TreeNode node, int s) {
             if (node == null) return 0;
             int ans = 0;
-            if (node.left == null && node.right == null) return Integer.parseInt(s + node.val);
+            s *= 10;
+            if (node.left == null && node.right == null) return s + node.val;
             ans += helper(node.left, s + node.val);
             ans += helper(node.right, s + node.val);
             return ans;
