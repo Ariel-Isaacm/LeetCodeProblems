@@ -9,4 +9,8 @@ public class ListNode {
         next = null;
     }
 
+    public ListNode(){
+
+    }
+
 }
