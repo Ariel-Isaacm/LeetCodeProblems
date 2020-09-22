@@ -30,14 +30,12 @@ public class Trie208 {
         }
 
         public boolean search(String word) {
-            Node currentNode = head;
-            currentNode = isOnTree(word, currentNode);
+            Node currentNode = isOnTree(word, head);
             return currentNode != null && currentNode.isCompleteWord;
         }
 
         public boolean startsWith(String prefix) {
-            Node currentNode = head;
-            return isOnTree(prefix, currentNode) != null;
+            return isOnTree(prefix, head) != null;
         }
 
         private Node isOnTree(String word, Node currentNode) {
