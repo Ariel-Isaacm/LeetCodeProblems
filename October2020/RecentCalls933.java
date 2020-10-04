@@ -1,4 +1,4 @@
-package LinkedList;
+package October2020;
 
 import java.util.LinkedList;
 
@@ -19,7 +19,6 @@ public class RecentCalls933 {
                     break;
                 }
             }
-
             return state.size();
         }
     }
