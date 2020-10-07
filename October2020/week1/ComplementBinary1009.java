@@ -1,4 +1,4 @@
-package October2020;
+package October2020.week1;
 
 public class ComplementBinary1009 {
     class Solution {

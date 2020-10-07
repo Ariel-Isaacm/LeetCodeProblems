@@ -1,4 +1,4 @@
-package October2020;
+package October2020.week1;
 
 public class RemoveCoveredIntervals1288 {
     public int removeCoveredIntervals(int[][] intervals) {
