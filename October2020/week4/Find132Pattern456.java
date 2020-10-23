@@ -1,6 +1,6 @@
 package October2020.week4;
 
-public class find132Pattern456 {
+public class Find132Pattern456 {
     class Solution {
         public boolean find132pattern(int[] nums) {
             int n = nums.length;
