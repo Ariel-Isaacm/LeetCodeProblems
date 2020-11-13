@@ -1,4 +1,4 @@
-package Trees;
+package November2020;
 
 import java.util.LinkedList;
 
@@ -45,6 +45,5 @@ public class PopulatingNextPointer117 {
             }
             return root;
         }
-
     }
 }
