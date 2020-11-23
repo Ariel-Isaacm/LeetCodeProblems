@@ -1,3 +1,5 @@
+import Misc.TreeNode;
+
 class Solution {
     TreeNode x, y, prev;
     public void recoverTree(TreeNode root) {
