@@ -1,4 +1,4 @@
-package Misc;
+package December2020;
 
 public class KthFactor1492 {
     class Solution {
