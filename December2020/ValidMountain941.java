@@ -2,7 +2,7 @@ package December2020;
 
 public class ValidMountain941 {
     class Solution {
-        public boolean validMountainArray(int[] A) {
+        public boolean validMountainArray80(int[] A) {
             int N = A.length;
             int i = 0;
 
