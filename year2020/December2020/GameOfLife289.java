@@ -1,4 +1,4 @@
-package Array;
+package year2020.December2020;
 
 public class GameOfLife289 {
     class Solution {
