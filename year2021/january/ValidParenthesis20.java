@@ -1,4 +1,4 @@
-package LinkedList;
+package year2021.january;
 
 import java.util.Stack;
 
