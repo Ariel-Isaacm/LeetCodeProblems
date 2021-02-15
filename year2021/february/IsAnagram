@@ -1,0 +1,17 @@
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        return getFreq(s).equals(getFreq(t));
+    }
+    
+    private Map<Character, Integer> getFreq(String s){
+        Map<Character, Integer> frecuency = new HashMap<>();
+        for(int i=0; i<s.length(); i++){
+            int times= 1;
+            if(frecuency.containsKey(s.charAt(i))){
+                times = frecuency.get(s.charAt(i)) +1;
+            }
+            frecuency.put(s.charAt(i), times);
+        }
+        return frecuency;
+    }
+}
