@@ -1,0 +1,38 @@
+class Solution {
+    public int[] kWeakestRows(int[][] mat, int k) {
+        int l=0;
+
+        Map<Integer,Integer> p=new HashMap<>();
+        int a[]=new int[k];
+        int x=0;
+        for(int i=0;i<mat.length;i++)
+        {
+            x=0;
+            for(int j=0;j<mat[i].length;j++)
+            {
+                if(mat[i][j]==1)
+                    x++;
+            }
+        
+            p.put(i,x);
+            
+    }
+      List<Integer> pqe=new ArrayList<>(p.values());
+         Collections.sort(pqe);    
+        Set<Integer> pq=new LinkedHashSet<>(pqe);
+    for(int y: pq){
+        System.out.println(y);
+        for(int j=0;j<mat.length;j++)
+        {
+            if(p.get(j)==y){
+                if(l>=k)break;
+                a[l++]=j;
+            
+            }
+        }
+        if(l>=k)break;
+
+    }
+        return a;
+}
+}
